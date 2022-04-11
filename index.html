@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <my-header></my-header>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li class="item1 active"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+      
+            <div class="item active">
+              <img src="images/imagen1.jpg" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>HTML</h3>
+                <p>Familiarizate en este documento escrito.</p>
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="images/imagen2.jpg" alt="Chania" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>CSS</h3>
+                <p>Familiarizate en esta hoja de estilo.</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="images/imagen3.jpg" alt="Flower" width="460" height="345">
+              <div class="carousel-caption">
+                <h3>JS</h3>
+                <p>Familiarizate en esta funcion.</p>
+              </div>
+            </div>
+
+            <div class="item">
+                <video width="70%" margin="auto" muted controls>
+                    <source src="tutorial.mp4" type="video/mp4">
+                    <source src="" type="video/ogg">
+                    Tu navegador no es compatible con videos HTML5
+                </video>
+                <div class="carousel-caption">
+                  <h3>Tutorial de html y css</h3>
+                  <p>te recomiendo ver este primer video de html y css.</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <video width="70%" margin="auto" muted controls>
+                    <source src="tutorial2.mp4" type="video/mp4">
+                    <source src="" type="video/ogg">
+                    Tu navegador no es compatible con videos HTML5
+                </video>
+                <div class="carousel-caption">
+                  <h3>Tutorial de js</h3>
+                  <p>te recomiendo ver este segundo video de javascript.</p>
+                </div>
+              </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span>Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span>Next</span>
+          </a>
+        </div>
+      </div>
+
+    <main>
+        <h1>Hora Actual en colombia</h1>
+        <div id="fecha" class="date">
+            <span id="weekDay" class="weekDay"></span>, 
+            <span id="day" class="day"></span> de
+            <span id="month" class="month"></span> del
+            <span id="year" class="year"></span>
+        </div>
+        <div class="clock">
+            <span id="hours" class="hours"></span> :
+            <span id="minutes" class="minutes"></span> :
+            <span id="seconds" class="seconds"></span>
+        </div>
+        <section class="container about">
+            <h2 class="subtitle">¿Que vas a aprender en este curso?</h2>
+            <p class="about_paragraph">En esta seccion aprenderas a manejar cada uno de estos conceptos con el fin de crear tu primer sitio web</p>
+            <div class="about_main">
+                <article class="about_icons">
+                    <h3 class="about_title">CSS</h3>
+                    <img src="./images/css.png" class="about_icon">
+                    <p class="about_paragraph">es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, 
+                    cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.</p>
+                </article>
+                <article class="about_icons">
+                    <h3 class="about_title">HTML</h3>
+                    <img src="./images/html.png" class="about_icon">
+                    <p class="about_paragraph">es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. 
+                    Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, 
+                    que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.</p>
+                </article>
+                <article class="about_icons">
+                    <h3 class="about_title">JS</h3>
+                    <img src="./images/javascript.png" class="about_icon">
+                    <p class="about_paragraph"> es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase. Si bien es más conocido como un lenguaje de scripting (secuencias de comandos) para páginas web, 
+                    y es usado en muchos entornos fuera del navegador, tal como Node.js, Apache CouchDB y Adobe Acrobat JavaScript.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge_container container">
+                <div class="knowledge_texts">
+                    <h2 class="subtitle">Desea ver curso completo de CSS y HTML. !Vamos ya!</h2>
+                    <p class="knowledge_paragraph">haga click a los siguientes botones de abajo donde te mandara para unos videos que son 100% recomendados</p>
+                    <a href="https://www.youtube.com/watch?v=MJkdaVFHrto&t=420s" class="cta">Entra al curso html</a>
+                    <a href="https://www.youtube.com/watch?v=wZniZEbPAzk" class="cta">Entra al curso css</a>
+                    <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E" class="cta">Entra al curso javascript</a>
+                </div>
+
+                <figure class="knowledge_picture">
+                    <img src="./images/computador.jpg" class="knowledge_img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Obten la oferta que sea a tu comodidad</h2>
+
+            <div class="price_table">
+                <div class="price_element">
+                    <p class="price_name">Flexbox</p>
+                    <h3 class="price_price">Free</h3>
+                
+                <div class="price_items">
+                    <p class="price_features">Flexbox</p>
+                    <p class="price_features">Layouts</p>
+                    <p class="price_features">Responsive</p>
+                </div>
+
+                <a href="" class="price_cta">Empieza ahora</a>
+
+                </div>
+
+                <div class="price_element price_element--best">
+                    <p class="price_name">Grid</p>
+                    <h3 class="price_price">$30/mes</h3>
+                
+                <div class="price_items">
+                    <p class="price_features">Grid</p>
+                    <p class="price_features">Implicit Grid</p>
+                    <p class="price_features">Responsive</p>
+                </div>
+
+                <a href="formbuy.html" class="price_cta">Empieza ahora</a>
+
+                </div>
+
+                <div class="price_element">
+                    <p class="price_name">Animaciones</p>
+                    <h3 class="price_price">$40/mes</h3>
+                
+                <div class="price_items">
+                    <p class="price_features">Animation</p>
+                    <p class="price_features">Transition</p>
+                    <p class="price_features">Render Website</p>
+                </div>
+
+                <a href="" class="price_cta">Empieza ahora</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony_container container">
+                <img src="./images/flecha-izquierda.png" id="before" class="testimony_arrow">
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Mi nombre es kevin ortega, <span class="testimony_course">ingeniero de sistemas</span> </h2>
+                        <p class="testimony_review">Trabajo como ingeniero de sistemas en la ciudad de cartagena de indias.</p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="./images/face1.jpg" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="2">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Mi nombre es karla martinez, <span class="testimony_course">Doctora</span> </h2>
+                        <p class="testimony_review">Trabajo como doctora en la ciudad de barranquilla. </p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="./images/face2.jpg" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="3">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Mi nombre es carlos peña, <span class="testimony_course">Administrador de almacen</span> </h2>
+                        <p class="testimony_review">Trabajo como administrador de almacen en la ciudad de medellin. </p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="./images/face3.jpg" class="testimony_img">
+                    </figure>
+                </section>
+                <section class="testimony_body" data-id="4">
+                    <div class="testimony_texts">
+                        <h2 class="subtitle">Mi nombre es valentina perez, <span class="testimony_course">Estilista de peluqueria</span> </h2>
+                        <p class="testimony_review">Trabajo como estilista de peluqueria en la ciudad de bucaramanga. </p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="./images/face4.jpg" class="testimony_img">
+                    </figure>
+                </section>
+                <img src="./images/flecha-derecha.png" id="next" class="testimony_arrow">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions_paragraph">en esta seccion encontraras unas preguntas con su respectiva respuesta con respecto a lo que vas a aprender</p>
+            
+            <section class="questions_container">
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿Que es CSS?
+                            <span class="questions_arrow">
+                                <img src="./images/arriba.png" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">es un lenguaje que define la apariencia de un documento escrito en un lenguaje de marcado (por ejemplo, HTML).</p>
+                    </div>
+                </article>
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿Que aprenderas en este curso?
+                            <span class="questions_arrow">
+                                <img src="./images/arriba.png" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">En este curso aprenderas a manejar lo que es la hoja de estilo(CSS) y el documento html en el cual ambos tienen que estar en union ya que una pagina sin diseño no tiene sentido</p>
+                    </div>
+                </article>
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿Que es HTML?
+                            <span class="questions_arrow">
+                                <img src="./images/arriba.png" class="questions_img">
+                            </span>
+                        </h3>
+                        <p class="questions_show">Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones,
+                        define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos,
+                        juegos, entre otros.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions_offer">
+                <h2 class="subtitle">¿Estas listo para aprender CSS y HTML?</h2>
+                <p class="questions_copy">si desea aprender css y html lo invito a darle click a los botones de abajo eso lo mandara para el tutorial</p>
+                <a href="https://www.w3schools.com/css/" class="cta">Tutorial de CSS</a>
+                <a href="https://www.w3schools.com/html/default.asp" class="cta">Tutorial de html</a>
+                <a href="https://www.w3schools.com/js/default.asp" class="cta">Tutorial de javascript</a>
+            </section>
+        </section>
+    </main>
+    <my-footer></my-footer>
+</div>
+    <script src="./js/loader.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Activate Carousel
+          $("#myCarousel").carousel();
+            
+          // Enable Carousel Indicators
+          $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+          });
+          $(".item2").click(function(){
+            $("#myCarousel").carousel(1);
+          });
+          $(".item3").click(function(){
+            $("#myCarousel").carousel(2);
+          });
+          $(".item4").click(function(){
+            $("#myCarousel").carousel(3);
+          });
+          $(".item5").click(function(){
+            $("#myCarousel").carousel(3);
+          });
+            
+          // Enable Carousel Controls
+          $(".left").click(function(){
+            $("#myCarousel").carousel("prev");
+          });
+          $(".right").click(function(){
+            $("#myCarousel").carousel("next");
+          });
+        });
+        </script>
+</body>
+</html>

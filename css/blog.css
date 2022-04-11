@@ -1,0 +1,71 @@
+.blog1{
+max-width: 55%;
+height: auto;
+margin: 20px;
+padding: 200px;
+display: block;
+margin: auto;
+background-image: url(../images/blog1.png);
+background-position: 0% 0%;
+background-size: 500px 300px;
+background-repeat: no-repeat;
+}
+
+.blog2{
+max-width: 55%;
+height: auto;
+margin: 20px;
+padding: 200px;
+display: block;
+margin: auto;
+background-image: url(../images/blog2.jpg);
+background-position: 0% 0%;
+background-size: 500px 300px;
+background-repeat: no-repeat;
+}
+
+.blog3{
+max-width: 55%;
+height: auto;
+margin: 20px;
+padding: 200px;
+display: block;
+margin: auto;
+background-image: url(../images/css1.jpg);
+background-position: 0% 0%;
+background-size: 500px 300px;
+background-repeat: no-repeat;
+}
+
+.blog4{
+max-width: 55%;
+height: auto;
+margin: 20px;
+padding: 200px;
+display: block;
+margin: auto;
+background-image: url(../images/css2.png);
+background-position: 0% 0%;
+background-size: 500px 300px;
+background-repeat: no-repeat;
+}
+
+.blog-container {
+    display: flex;
+  }
+  
+  .blog-container .blog1:first-child {
+    margin-right: 10px;
+  }
+
+  .blog-container .blog2:first-child {
+    margin-right: 10px;
+  }
+
+  .blog-container .blog3:first-child {
+    margin-right: 10px;
+  }
+
+  .blog-container .blog4:first-child {
+    margin-right: 10px;
+  }
