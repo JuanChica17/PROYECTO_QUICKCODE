@@ -32,6 +32,9 @@ class myHeader extends HTMLElement {
               <li class="nav_items">
                   <a href="operaciones.html" class="nav_links">Operaciones</a>
               </li>
+              <li class="nav_items">
+                  <a href="mapa_google.html" class="nav_links">GoogleMaps</a>
+              </li>
 
               <img src="./images/close.svg" class="nav_close">
           </ul>
