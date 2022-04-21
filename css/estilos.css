@@ -159,10 +159,12 @@ color: #fff;
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
+    background: #5E4B56;
+    border-radius: 10px;
 }
 
 .about_icon{
-    width: 40px;
+    width: 100px;
 }
 
 .knowledge{
