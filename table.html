@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <my-header></my-header>
+    <main>
+        <div class="container">
+            <form>
+                <input type="number" placeholder="Nombre" id="Id">
+                <input type="text" placeholder="Nombre" id="nombre">
+                <input type="text" placeholder="Apellido" id="apellido">
+                <button type="button" id="btnGuardarPersona">Guardar</button>
+            </form>
+            <br>
+            <table id="tablaPersona">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Radio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <my-footer></my-footer>
+    <script src="./js/table.js"></script>
+    <script src="./js/funcion_table.js"></script>
+    <script src="./js/loader.js"></script>
+</body>
+</html>
