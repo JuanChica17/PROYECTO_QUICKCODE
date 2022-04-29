@@ -1,0 +1,22 @@
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-image: url(../images/cuentaregresiva.jpg);
+    background-position: 0% 0%;
+    background-size: 600px 300px;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.big-number{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
