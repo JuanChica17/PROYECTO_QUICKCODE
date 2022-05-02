@@ -18,7 +18,7 @@ class myHeader extends HTMLElement {
                   <a href="index.html" class="nav_links">Inicio</a>
               </li>
               <li class="nav_items">
-                  <a href="acercade.html" class="nav_links">Acerca de</a>
+                  <a href="about.html" class="nav_links">Acerca de</a>
               </li>
               <li class="nav_items">
                   <a href="contact.html" class="nav_links">Contacto</a>
@@ -30,10 +30,10 @@ class myHeader extends HTMLElement {
                   <a href="form.html" class="nav_links">Formulario</a>
               </li>
               <li class="nav_items">
-                  <a href="operaciones.html" class="nav_links">Operaciones</a>
+                  <a href="operations.html" class="nav_links">Operaciones</a>
               </li>
               <li class="nav_items">
-                  <a href="mapa_google.html" class="nav_links">GoogleMaps</a>
+                  <a href="map.html" class="nav_links">GoogleMaps</a>
               </li>
               <li class="nav_items">
                   <a href="table.html" class="nav_links">Tabla</a>
