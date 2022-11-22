@@ -1,3 +1,6 @@
+<?php
+session_start();
+if(isset($_SESSION['tipo_usuario'])){?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +21,11 @@
 <div class='swanky'>
   <!-- / Introduction Block -->
   <div class='swanky_title'>
-    <h1>Bienvenido Usuario</h1>
+    <h1>Bienvenido <?= $_SESSION['nombre_usuario']?></h1>
+    <?php
+                if($_SESSION['tipo_usuario'] == 'natural'){
+                  echo "<img src='img/administrativo.png' width='50' height='50'>";
+                }?>
     <p>Pure CSS Drop down menu. Nice little addition to any non-javascript user interface. Uses the labels for trick to toggle animations.</p>
     <div class='swanky_title__social'>
       <a href='https://www.twitter.com/jamiecoulter89' target='_blank'>
@@ -117,7 +124,7 @@
           <li>Databases</li>
           <li>Design</li>
           <li>Change User</li>
-          <li><a href="index.html">Log Out</a></li>
+          <li><a href="cerrarsession.php">Cerrar Session</a></li>
         </ul>
       </div>
     </label>
@@ -130,3 +137,8 @@
 </div>
 </body>
 </html>
+<?php
+}else{
+  header('location: form.php');
+}
+?>
